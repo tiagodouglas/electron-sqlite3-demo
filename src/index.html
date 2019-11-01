@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lança gastos</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="../node_modules/material-icons-font/material-icons-font.css">
+    <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="../src/resources/css/style.css">
+  </head>
+  <body>
+      <header id="titlebar">
+          <div id="drag-region">
+              <div id="window-title">
+                  <span>Lança gastos</span>
+                </div>
+            <div id="window-controls">
+              <div class="button" id="min-button">
+                <span>&#xE921;</span>
+              </div>
+              <div class="button" id="max-button">
+                <span>&#xE922;</span>
+              </div>
+              <div class="button" id="restore-button">
+                <span>&#xE923;</span>
+              </div>
+              <div class="button" id="close-button">
+                <span>&#xE8BB;</span>
+              </div>
+            </div>
+          </div>
+        </header>
+    
+      <div class="container">
+        <div class="section">
+            <div class="row" style="padding-top: 30px;">
+                <div class="col s12">
+
+                        <div class="card">
+                                <div class="card-content">
+                                  <span class="card-title">Lista de gastos</span>
+                                </div>
+                                <div class="card-action">
+                                        <table class="highlight">
+                                                <thead>
+                                                  <tr>
+                                                      <th>Name</th>
+                                                      <th>Item Name</th>
+                                                      <th>Item Price</th>
+                                                  </tr>
+                                                </thead>
+                                        
+                                                <tbody>
+                                                  <tr>
+                                                    <td>Alvin</td>
+                                                    <td>Eclair</td>
+                                                    <td>$0.87</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Alan</td>
+                                                    <td>Jellybean</td>
+                                                    <td>$3.76</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Jonathan</td>
+                                                    <td>Lollipop</td>
+                                                    <td>$7.00</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                </div>
+                              </div>
+
+               
+
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-action-btn">
+                <a class="btn-floating btn-large red">
+                  <i class="large material-icons">mode_edit</i>
+                </a>
+                <ul>
+                  <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                  <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                  <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                  <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                </ul>
+              </div>
+      </div>
+
+      <script>
+          require('./renderer.js')
+        </script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="resources/js/init.js"></script>
+  </body>
+</html>
